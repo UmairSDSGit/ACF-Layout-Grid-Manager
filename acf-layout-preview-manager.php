@@ -2,7 +2,7 @@
 /**
  * Plugin Name: ACF Layout Grid Manager
  * Description: Enhances ACF Flexible Content with customizable layout preview grids.
- * Version: 1.1.3
+ * Version: 1.1.4
  * Author: UmairSDS
  * License: GPL2
  * Text Domain: acf-lgm
@@ -15,7 +15,7 @@ define('ACF_LGM_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('ACF_LGM_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('ACF_LGM_DEFAULT_GRID_COLUMNS', 4);
 define('ACF_LGM_DEFAULT_ITEM_HEIGHT', 100);
-define('ACF_LGM_VERSION', '1.1.3');
+define('ACF_LGM_VERSION', '1.1.4');
 
 // Include plugin files
 require_once ACF_LGM_PLUGIN_DIR . 'includes/plugin-updates.php';
