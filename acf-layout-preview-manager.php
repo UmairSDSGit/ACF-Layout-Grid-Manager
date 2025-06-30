@@ -16,6 +16,7 @@ define('ACF_LGM_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('ACF_LGM_DEFAULT_GRID_COLUMNS', 4);
 define('ACF_LGM_DEFAULT_ITEM_HEIGHT', 100);
 define('ACF_LGM_DEFAULT_BG_COLOR', '#ffffff');
+define('ACF_LGM_VERSION', '1.1.1');
 
 /**
  * Register ACF Options Page and Fields
@@ -303,3 +304,5 @@ function acf_lgm_create_assets() {
         // file_put_contents($placeholder_src, file_get_contents('URL_TO_DEFAULT_PLACEHOLDER'));
     }
 }
+
+
