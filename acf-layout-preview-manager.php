@@ -10,6 +10,19 @@
 
 if (!defined('ABSPATH')) exit; // Exit if accessed directly
 
+// Plugin update checker
+require 'plugin-update-checker/plugin-update-checker.php';
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+
+$myUpdateChecker = PucFactory::buildUpdateChecker(
+    'https://github.com/UmairSDSGit/ACF-Layout-Grid-Manager.git',
+    __FILE__,
+    'ACF-Layout-Grid-Manager'
+);
+
+// Optional: Set branch for updates (default: master/main)
+$myUpdateChecker->setBranch('main');
+
 // Define plugin constants
 define('ACF_LGM_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('ACF_LGM_PLUGIN_URL', plugin_dir_url(__FILE__));
@@ -27,7 +40,7 @@ function acf_lgm_register_acf_fields() {
 
     // Add main options page
     acf_add_options_page([
-        'page_title' => __('Layout Grid Settings', 'acf-lgm'),
+        'page_title' => __('Layout Grida Settings', 'acf-lgm'),
         'menu_title' => __('Layout Grid', 'acf-lgm'),
         'menu_slug'  => 'acf-layout-grid-settings',
         'capability' => 'edit_posts',
