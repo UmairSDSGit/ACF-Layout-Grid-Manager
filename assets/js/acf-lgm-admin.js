@@ -36,6 +36,9 @@
             // Skip if already enhanced
             if ($ul.hasClass('acf-lgm-grid-container')) return;
             
+            // Add plugin-specific class to the tooltip popup
+            $popup.addClass('acf-lgm-popup');
+            
             // Clear existing content and add our classes
             $ul.empty().addClass('acf-lgm-grid-container');
             

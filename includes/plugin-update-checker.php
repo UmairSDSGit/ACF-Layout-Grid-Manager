@@ -1,3 +1,4 @@
+<?php
 /**
  * GitHub update checker integration
  */
