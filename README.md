@@ -48,10 +48,18 @@ After activation:
 
 ## Changelog
 
+### 1.1.3
+* Added: Separate files for ACF fields and plugin updates
+* Improved: ACF fields now display at 50% width for better organization
+* Improved: Code structure and organization
+* Fixed: Minor CSS issues
+
 ### 1.1.2
 * Added: GitHub update checker integration
 * Improved: Documentation and README
 * Fixed: Minor CSS issues
+* Fixed: Plugin version consistency
+* Improved: Code organization and structure
 
 ### 1.1.1
 * Initial public release
