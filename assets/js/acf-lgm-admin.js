@@ -51,7 +51,7 @@
             $popup.prepend(`
                 <div class="acf-lgm-grid-header">
                     <h3 class="acf-lgm-grid-title">Choose a Layout</h3>
-                    <a href="#" class="acf-lgm-grid-close">&times;</a>
+                    <a href="#" class="acf-lgm-grid-close">X</a>
                 </div>
             `);
             
@@ -73,21 +73,12 @@
                             <img src="${imageUrl}" 
                                  alt="${layoutLabel}" 
                                  class="acf-lgm-grid-item-image"
-                                 style="height: ${settings.item_height || 100}px; 
-                                        background-color: ${settings.bg_color || '#ffffff'}" />
+                                 style="height: ${settings.item_height || 100}px;" />
                             <span class="acf-lgm-grid-item-title">${layoutLabel}</span>
                             ${description ? `<span class="acf-lgm-grid-item-desc">${description}</span>` : ''}
                         </a>
                     </li>
                 `);
-                
-                // Add hover effect if enabled
-                if (settings.hover_effect !== false) {
-                    $li.find('a').hover(
-                        function() { $(this).css('border-color', '#2271b1'); },
-                        function() { $(this).css('border-color', '#ddd'); }
-                    );
-                }
                 
                 $ul.append($li);
             });

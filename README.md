@@ -48,6 +48,11 @@ After activation:
 
 ## Changelog
 
+### 1.1.4
+* Updated: Improved UI for a cleaner, more user-friendly experience
+* Removed: Extra fields no longer needed
+* Fixed: Various minor errors and bugs
+
 ### 1.1.3
 * Added: Separate files for ACF fields and plugin updates
 * Improved: ACF fields now display at 50% width for better organization

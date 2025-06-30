@@ -15,7 +15,6 @@ define('ACF_LGM_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('ACF_LGM_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('ACF_LGM_DEFAULT_GRID_COLUMNS', 4);
 define('ACF_LGM_DEFAULT_ITEM_HEIGHT', 100);
-define('ACF_LGM_DEFAULT_BG_COLOR', '#ffffff');
 define('ACF_LGM_VERSION', '1.1.3');
 
 // Include plugin files
@@ -85,8 +84,6 @@ function acf_lgm_enqueue_admin_assets() {
         'settings' => [
             'grid_columns' => ACF_LGM_DEFAULT_GRID_COLUMNS,
             'item_height' => ACF_LGM_DEFAULT_ITEM_HEIGHT,
-            'bg_color' => ACF_LGM_DEFAULT_BG_COLOR,
-            'hover_effect' => true
         ],
         'placeholder' => ACF_LGM_PLUGIN_URL . 'assets/images/placeholder.jpg'
     ];

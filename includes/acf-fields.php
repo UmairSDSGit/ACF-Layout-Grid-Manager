@@ -34,9 +34,6 @@ function acf_lgm_register_acf_fields() {
                 'type' => 'group',
                 'instructions' => __('Configure how the layout grid appears in the admin area.', 'acf-lgm'),
                 'layout' => 'block',
-                'wrapper' => [
-                    'width' => '50%', // Set to 50% width
-                ],
                 'sub_fields' => [
                     [
                         'key' => 'field_acf_lgm_grid_columns',
@@ -47,7 +44,10 @@ function acf_lgm_register_acf_fields() {
                         'default_value' => ACF_LGM_DEFAULT_GRID_COLUMNS,
                         'min' => 1,
                         'max' => 6,
-                        'step' => 1
+                        'step' => 1,
+                        'wrapper' => [
+                            'width' => '50%', // Set to 50% width
+                        ],
                     ],
                     [
                         'key' => 'field_acf_lgm_item_height',
@@ -58,25 +58,11 @@ function acf_lgm_register_acf_fields() {
                         'default_value' => ACF_LGM_DEFAULT_ITEM_HEIGHT,
                         'min' => 50,
                         'max' => 300,
-                        'step' => 10
+                        'step' => 10,
+                        'wrapper' => [
+                            'width' => '50%', // Set to 50% width
+                        ],
                     ],
-                    [
-                        'key' => 'field_acf_lgm_bg_color',
-                        'label' => __('Background Color', 'acf-lgm'),
-                        'name' => 'bg_color',
-                        'type' => 'color_picker',
-                        'instructions' => __('Set the background color for the grid items', 'acf-lgm'),
-                        'default_value' => ACF_LGM_DEFAULT_BG_COLOR
-                    ],
-                    [
-                        'key' => 'field_acf_lgm_hover_effect',
-                        'label' => __('Hover Effect', 'acf-lgm'),
-                        'name' => 'hover_effect',
-                        'type' => 'true_false',
-                        'instructions' => __('Enable hover effects on grid items', 'acf-lgm'),
-                        'default_value' => 1,
-                        'ui' => 1
-                    ]
                 ]
             ],
             [
@@ -87,9 +73,6 @@ function acf_lgm_register_acf_fields() {
                 'instructions' => __('Add your layout previews by specifying the layout name and uploading an image.', 'acf-lgm'),
                 'min' => 1,
                 'layout' => 'block',
-                'wrapper' => [
-                    'width' => '50%', // Set to 50% width
-                ],
                 'button_label' => __('Add Layout Preview', 'acf-lgm'),
                 'sub_fields' => [
                     [
@@ -99,7 +82,10 @@ function acf_lgm_register_acf_fields() {
                         'type' => 'text',
                         'instructions' => __('Enter the exact layout name as defined in your flexible content field (e.g. hero_section)', 'acf-lgm'),
                         'required' => 1,
-                        'placeholder' => 'layout_name'
+                        'placeholder' => 'layout_name',
+                        'wrapper' => [
+                            'width' => '33.33%', // Set to 50% width
+                        ],
                     ],
                     [
                         'key' => 'field_acf_lgm_layout_image',
@@ -110,7 +96,10 @@ function acf_lgm_register_acf_fields() {
                         'required' => 1,
                         'return_format' => 'url',
                         'preview_size' => 'medium',
-                        'library' => 'all'
+                        'library' => 'all',
+                        'wrapper' => [
+                            'width' => '33.33%', // Set to 50% width
+                        ],
                     ],
                     [
                         'key' => 'field_acf_lgm_layout_description',
@@ -118,7 +107,10 @@ function acf_lgm_register_acf_fields() {
                         'name' => 'layout_description',
                         'type' => 'text',
                         'instructions' => __('Optional description that appears below the layout name', 'acf-lgm'),
-                        'required' => 0
+                        'required' => 0,
+                        'wrapper' => [
+                            'width' => '33.33%', // Set to 50% width
+                        ],
                     ]
                 ]
             ]
