@@ -1,0 +1,107 @@
+/* ACF Layout Grid Manager - Admin Styles */
+.acf-lgm-grid-container {
+    display: grid !important;
+    gap: 20px;
+    padding: 15px;
+    max-height: 70vh;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.acf-lgm-grid-item {
+    list-style: none;
+    transition: all 0.3s ease;
+    break-inside: avoid;
+}
+
+.acf-lgm-grid-item a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.acf-lgm-grid-item a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.acf-lgm-grid-item-image {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.acf-lgm-grid-item-title {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1d2327;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.acf-lgm-grid-item-desc {
+    display: block;
+    font-size: 12px;
+    color: #646970;
+    margin-top: auto;
+}
+
+.acf-tooltip.acf-fc-popup {
+    width: 90% !important;
+    max-width: 1200px !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: 50px !important;
+    margin: 0 auto !important;
+    padding: 20px;
+    position: fixed !important;
+    background-color: rgba(29, 35, 39, 0.95);
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    z-index: 999999;
+}
+
+.acf-tooltip.left:before {
+    content: unset !important;
+}
+
+.acf-lgm-grid-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 0 15px;
+}
+
+.acf-lgm-grid-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0;
+}
+
+.acf-lgm-grid-close {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.acf-lgm-grid-close:hover {
+    color: #f0f0f1;
+}
