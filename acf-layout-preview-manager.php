@@ -19,8 +19,8 @@ define('ACF_LGM_DEFAULT_BG_COLOR', '#ffffff');
 define('ACF_LGM_VERSION', '1.1.3');
 
 // Include plugin files
-require_once ACF_LGM_PLUGIN_DIR . 'includes/acf-fields.php';
 require_once ACF_LGM_PLUGIN_DIR . 'includes/plugin-updates.php';
+require_once ACF_LGM_PLUGIN_DIR . 'includes/acf-fields.php';
 
 /**
  * Enqueue admin assets and pass configuration to JavaScript
